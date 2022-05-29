@@ -4,8 +4,12 @@
 
 class Sottrazione : public OperazioneAritmetica {
 	public:
-	Sottrazione() : OperazioneAritmetica() {}
-	Sottrazione(double sx, double dx) : OperazioneAritmetica(sx, dx) {}
+	Sottrazione() : OperazioneAritmetica() {
+		this->symbol = '-';
+	}
+	Sottrazione(double sx, double dx) : OperazioneAritmetica(sx, dx) {
+		this->symbol = '-';
+	}
 	double eseguiCalcolo() {
 		return opSinistro - opDestro;
 	}

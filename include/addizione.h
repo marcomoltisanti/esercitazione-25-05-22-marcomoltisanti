@@ -4,8 +4,12 @@
 
 class Addizione : public OperazioneAritmetica {
 	public:
-	Addizione() : OperazioneAritmetica() {}
-	Addizione(double sx, double dx) : OperazioneAritmetica(sx, dx) {}
+	Addizione() : OperazioneAritmetica() {
+		this->symbol = '+';
+	}
+	Addizione(double sx, double dx) : OperazioneAritmetica(sx, dx) {
+		this->symbol = '+';
+	}
 	double eseguiCalcolo() {
 		return opSinistro + opDestro;
 	}

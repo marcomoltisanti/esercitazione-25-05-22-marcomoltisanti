@@ -9,7 +9,13 @@ class OperazioneAritmetica {
 	
 	public:
 	
-	OperazioneAritmetica(double sx, double dx) : opSinistro(sx), opDestro(dx) {}
+	OperazioneAritmetica(double sx=0.0, double dx=0.0) : opSinistro(sx), opDestro(dx) {}
+	void setOpSinistro(double sx) {
+		this->opSinistro = sx;
+	}
+	void setOpDestro(double dx) {
+		this->opDestro = dx;
+	}
 	virtual double eseguiCalcolo() = 0;
 };
 #endif

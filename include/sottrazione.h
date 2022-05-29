@@ -4,6 +4,7 @@
 
 class Sottrazione : public OperazioneAritmetica {
 	public:
+	Sottrazione() : OperazioneAritmetica() {}
 	Sottrazione(double sx, double dx) : OperazioneAritmetica(sx, dx) {}
 	double eseguiCalcolo() {
 		return opSinistro - opDestro;

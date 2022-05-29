@@ -4,6 +4,7 @@
 
 class Moltiplicazione : public OperazioneAritmetica {
 	public:
+	Moltiplicazione() : OperazioneAritmetica() {}
 	Moltiplicazione(double sx, double dx) : OperazioneAritmetica(sx, dx) {}
 	double eseguiCalcolo() {
 		return opSinistro * opDestro;

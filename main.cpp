@@ -29,4 +29,13 @@ int main() {
 	}
 
 	std::cout << operandi << std::endl;
+	
+	for(int i=0; i < N; i++) {
+		OperazioneAritmetica* op = operazioni.pop();
+		double n1 = operandi.dequeue();
+		double n2 = operandi.dequeue();
+		op->setOpSinistro(n1);
+		op->setOpDestro(n2);
+		std::cout << *op << " = " << op->eseguiCalcolo() << std::endl;
+	}
 }

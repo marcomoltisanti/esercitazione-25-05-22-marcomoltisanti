@@ -2,6 +2,7 @@
 #include "include/addizione.h"
 #include "include/sottrazione.h"
 #include "include/moltiplicazione.h"
+#include "include/divisione.h"
 
 void test_addizione() {
 	Addizione a(4.5, 4.5);
@@ -19,8 +20,14 @@ void test_moltiplicazione() {
 	std::cout << m.eseguiCalcolo() << std::endl;
 }
 
+void test_divisione() {
+	Divisione d(9.0, 2.0);
+	std::cout << d.eseguiCalcolo() << std::endl;
+}
+
 int main() {
 	test_addizione();
 	test_sottrazione();
 	test_moltiplicazione();
+	test_divisione();
 }

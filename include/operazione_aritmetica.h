@@ -17,7 +17,7 @@ class OperazioneAritmetica {
 		this->opDestro = dx;
 	}
 	virtual double eseguiCalcolo() = 0;
-	friend std::ostream operator<<(std::ostream& out, const OperazioneAritmetica& op) {
+	friend std::ostream& operator<<(std::ostream& out, const OperazioneAritmetica& op) {
 		out << op.opSinistro << " " << op.symbol << " " << op.opDestro;
 		return out;
 	}
